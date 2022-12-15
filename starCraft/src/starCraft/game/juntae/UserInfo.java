@@ -1,4 +1,4 @@
-package starCraft.game.juntae;
+package mini_project.Star;
 
 /**
  * 고객정보 클래스

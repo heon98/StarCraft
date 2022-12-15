@@ -1,4 +1,4 @@
-package starCraft.game.juntae;
+package mini_project.Star;
 
 
 import java.util.Scanner;
@@ -46,6 +46,8 @@ public class User {
 			Tride trides = GameManager.getInstance().getTrides().get(isTrideSelect - 1);
 			tride = trides.getTitle();
 			System.out.println("당신의 종족은 " + trides.getTitle() + "입니다.");
+			Unit unit = showUnit();
+			System.out.println(unit);
 		} else {
 			System.out.println("종족을 제대로 선택해주세요");
 			System.out.println("1번 테란 | 2번 저그 | 3번 프로토스");
@@ -53,10 +55,16 @@ public class User {
 		}
 	}
 
-	public void selectUnit() {
-		Unit unit = showUnit();
-		System.out.println(unit);
-	}
+	public void selectUnit(int change) {
+        if (change > 0) {
+           System.out.print("생성할 유닛을 입력하세요(ex. 마린)");
+            Scanner sc = new Scanner(System.in);
+            String isUnitSelect = sc.nextLine();
+            change = calculateMineral.calculateChange(isUnitSelect, change);
+            System.out.println(change);
+            selectUnit(change);
+        }
+    }
 
 	public User(String nickName, int mineral) {
 		super();

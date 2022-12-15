@@ -1,7 +1,5 @@
-package starCraft.game.juntae;
+package mini_project.Star;
 
 public class Computer {
-//	private int randInt;
-//	
-//	randInt = 
+
 }

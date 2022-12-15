@@ -1,4 +1,4 @@
-package starCraft.game.juntae;
+package mini_project.Star;
 
 import java.util.List;
 
@@ -16,7 +16,7 @@ public class Unit {
 		for (UnitItem unitItem : unitList) {
 			System.out.println(unitItem);
 		}
-		return "추가하고싶은 유닛 번호를 입력하세요";
+		return null;
 	}
-
+	
 }

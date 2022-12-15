@@ -1,4 +1,4 @@
-package starCraft.game.juntae;
+package mini_project.Star;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -12,6 +12,7 @@ import lombok.ToString;
 public class GameManager {
 	private List<Tride> trides;
 	private List<User> users;
+	private Unit unit;
 	private Unit terranUnit;
 	private Unit zergUnit;
 	private Unit protossUnit;
@@ -37,12 +38,12 @@ public class GameManager {
 		UnitItem unit5 = new UnitItem("레이스", 200, 30, 5);
 		UnitItem unit6 = new UnitItem("배틀크루져", 350, 70, 6);
 
-		UnitItem unit7 = new UnitItem("저글링", 50, 10, 1);
-		UnitItem unit8 = new UnitItem("히드라", 100, 20, 2);
-		UnitItem unit9 = new UnitItem("럴커", 250, 50, 3);
-		UnitItem unit10 = new UnitItem("뮤탈", 150, 30, 4);
-		UnitItem unit11 = new UnitItem("스커지", 100, 25, 5);
-		UnitItem unit12 = new UnitItem("울트라리스크", 300, 60, 6);
+		UnitItem unit7 = new UnitItem("저글링", 50, 10, 7);
+		UnitItem unit8 = new UnitItem("히드라", 100, 20, 8);
+		UnitItem unit9 = new UnitItem("럴커", 250, 50, 9);
+		UnitItem unit10 = new UnitItem("뮤탈", 150, 30, 10);
+		UnitItem unit11 = new UnitItem("스커지", 100, 25, 11);
+		UnitItem unit12 = new UnitItem("울트라리스크", 300, 60, 12);
 
 		UnitItem unit13 = new UnitItem("질럿", 150, 15, 1);
 		UnitItem unit14 = new UnitItem("드라군", 200, 20, 2);
@@ -57,7 +58,7 @@ public class GameManager {
 		List<UnitItem> zergList = new ArrayList<>(Arrays.asList(zergLists));
 		UnitItem[] protossLists = { unit13, unit14, unit15, unit16, unit17, unit18};
 		List<UnitItem> protossList = new ArrayList<>(Arrays.asList(protossLists));
-
+		
 		Unit terranUnit = new Unit("유닛 메뉴", terranList);
 		this.terranUnit = terranUnit;
 		Unit zergUnit = new Unit("유닛 메뉴", zergList);
@@ -65,10 +66,8 @@ public class GameManager {
 		Unit protossUnit = new Unit("유닛 메뉴", protossList);
 		this.protossUnit = protossUnit;
 
-//        UserInfo infoOfYoo = new UserInfo();
-		User yoo = new User("guguttemi", 10000);
 
-//        UserInfo infoOfkim = new UserInfo();
+		User yoo = new User("guguttemi", 10000);
 		User kim = new User("kimkongmi", 12000);
 
 		User[] userList = { yoo, kim };
