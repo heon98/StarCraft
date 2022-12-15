@@ -13,6 +13,7 @@ public class gameui {
 
 		System.out.println("스타크래프트 게임을 시작합니다...");
 		Thread.sleep(1000);
+		System.out.println("로딩 완료");
 		User yoo = GameManager.getInstance().getUsers().get(0);
 		Thread.sleep(1000);
 		System.out.println("당신의 종족을 선택해주세요.....");
