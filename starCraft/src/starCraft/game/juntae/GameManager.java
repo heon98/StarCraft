@@ -12,7 +12,9 @@ import lombok.ToString;
 public class GameManager {
 	private List<Tride> trides;
 	private List<User> users;
-	private Unit unit;
+	private Unit terranUnit;
+	private Unit zergUnit;
+	private Unit protossUnit;
 
 	private static GameManager gameManager = new GameManager();
 
@@ -35,25 +37,33 @@ public class GameManager {
 		UnitItem unit5 = new UnitItem("레이스", 200, 30, 5);
 		UnitItem unit6 = new UnitItem("배틀크루져", 350, 70, 6);
 
-		UnitItem unit7 = new UnitItem("저글링", 50, 10, 7);
-		UnitItem unit8 = new UnitItem("히드라", 100, 20, 8);
-		UnitItem unit9 = new UnitItem("럴커", 250, 50, 9);
-		UnitItem unit10 = new UnitItem("뮤탈", 150, 30, 10);
-		UnitItem unit11 = new UnitItem("스커지", 100, 25, 11);
-		UnitItem unit12 = new UnitItem("울트라리스크", 300, 60, 12);
+		UnitItem unit7 = new UnitItem("저글링", 50, 10, 1);
+		UnitItem unit8 = new UnitItem("히드라", 100, 20, 2);
+		UnitItem unit9 = new UnitItem("럴커", 250, 50, 3);
+		UnitItem unit10 = new UnitItem("뮤탈", 150, 30, 4);
+		UnitItem unit11 = new UnitItem("스커지", 100, 25, 5);
+		UnitItem unit12 = new UnitItem("울트라리스크", 300, 60, 6);
 
-		UnitItem item13 = new UnitItem("질럿", 150, 15, 1);
-		UnitItem item14 = new UnitItem("드라군", 200, 20, 2);
-		UnitItem item15 = new UnitItem("리버", 300, 30, 3);
-		UnitItem item16 = new UnitItem("스카우트", 300, 30, 4);
-		UnitItem item17 = new UnitItem("셔틀", 200, 0, 5);
-		UnitItem item18 = new UnitItem("캐리어", 400, 70, 6);
+		UnitItem unit13 = new UnitItem("질럿", 150, 15, 1);
+		UnitItem unit14 = new UnitItem("드라군", 200, 20, 2);
+		UnitItem unit15 = new UnitItem("리버", 300, 30, 3);
+		UnitItem unit16 = new UnitItem("스카우트", 300, 30, 4);
+		UnitItem unit17 = new UnitItem("셔틀", 200, 0, 5);
+		UnitItem unit18 = new UnitItem("캐리어", 400, 70, 6);
 
-		UnitItem[] unitItems = { unit1, unit2, unit3, unit4, unit5, unit6, unit7, unit8, unit9, unit10 };
-		List<UnitItem> unitList = new ArrayList<>(Arrays.asList(unitItems));
+		UnitItem[] terranLists = { unit1, unit2, unit3, unit4, unit5, unit6};
+		List<UnitItem> terranList = new ArrayList<>(Arrays.asList(terranLists));
+		UnitItem[] zergLists = { unit7, unit8, unit9, unit10, unit11, unit12};
+		List<UnitItem> zergList = new ArrayList<>(Arrays.asList(zergLists));
+		UnitItem[] protossLists = { unit13, unit14, unit15, unit16, unit17, unit18};
+		List<UnitItem> protossList = new ArrayList<>(Arrays.asList(protossLists));
 
-		Unit unit = new Unit("유닛 메뉴", unitList);
-		this.unit = unit;
+		Unit terranUnit = new Unit("유닛 메뉴", terranList);
+		this.terranUnit = terranUnit;
+		Unit zergUnit = new Unit("유닛 메뉴", zergList);
+		this.zergUnit = zergUnit;
+		Unit protossUnit = new Unit("유닛 메뉴", protossList);
+		this.protossUnit = protossUnit;
 
 //        UserInfo infoOfYoo = new UserInfo();
 		User yoo = new User("guguttemi", 10000);

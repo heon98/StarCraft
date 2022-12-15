@@ -15,7 +15,8 @@ public class gameui {
 		Thread.sleep(1000);
 		User yoo = GameManager.getInstance().getUsers().get(0);
 		Thread.sleep(1000);
-		System.out.println("당신의 종족을 선택해주세요.....");
+		System.out.println("당"
+				+ "신의 종족을 선택해주세요.....");
 		System.out.println("1번 테란 | 2번 저그 | 3번 프로토스");
 		yoo.selectTride();
 		Thread.sleep(1000);

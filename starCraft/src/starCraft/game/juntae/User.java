@@ -23,27 +23,45 @@ import lombok.Getter;
  */
 
 @Getter
-@AllArgsConstructor
 public class User {
 	private String nickName;
 	private int mineral;
+	private String tride;
 //	private UserInfo userInfo;
 	
 	public Unit showUnit() {
-		return GameManager.getInstance().getUnit();   
+		if (tride == "테란") {
+			return GameManager.getInstance().getTerranUnit();
+		} else if (tride == "저그") {
+			return GameManager.getInstance().getZergUnit();
+		} else {
+			return GameManager.getInstance().getProtossUnit();
+		}
 	}
 	
 	public void selectTride() {
 		Scanner sc = new Scanner(System.in);
 		int isTrideSelect = sc.nextInt();
-		if(isTrideSelect == )
-		Tride tride = GameManager.getInstance().getTrides().get(isTrideSelect - 1);
-		System.out.println("당신의 종족은 " + tride.getTitle() + "입니다.");
+		if((isTrideSelect == 1) || (isTrideSelect == 1) || (isTrideSelect == 1)) {
+			Tride trides = GameManager.getInstance().getTrides().get(isTrideSelect - 1);
+			tride = trides.getTitle();
+			System.out.println("당신의 종족은 " + trides.getTitle() + "입니다.");
+		} else {
+			System.out.println("종족을 제대로 선택해주세요");
+			System.out.println("1번 테란 | 2번 저그 | 3번 프로토스");
+			selectTride();
+		}
 	}
 
 	public void selectUnit() {
 		Unit unit = showUnit();
 		System.out.println(unit);
+	}
+
+	public User(String nickName, int mineral) {
+		super();
+		this.nickName = nickName;
+		this.mineral = mineral;
 	}
 	
 }
