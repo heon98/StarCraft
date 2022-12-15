@@ -1,22 +1,17 @@
 package starCraft.game.gameComponent;
 
-import lombok.Getter;
-
-@Getter
 public class Terran {
 	private String name;
-	private int resource;
-	private int power;
-	private int id;
+	private int cost;
+	private int ability;
+	private int unitId;
 
-	public Terran(String name, int resource, int power, int id) {
+	public Terran(String name, int cost, int ability, int unitId) {
 		super();
 		this.name = name;
-		this.resource = resource;
-		this.power = power;
-		this.id = id;
+		this.cost = cost;
+		this.ability = ability;
+		this.unitId = unitId;
 	}
-	
-	
 
 }
