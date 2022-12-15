@@ -1,5 +1,5 @@
 package starCraft.game.gameComponent;
 
-public class Unit {
+public class Protoss {
 
 }
