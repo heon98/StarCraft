@@ -5,9 +5,9 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Tribe {
-	private List<Terran>;
-	private List<Protoss>;
-	private List<Zerg>;
+	private List<Terran> terranUnits;
+	private List<Protoss> protossUnits;
+	private List<Zerg> zergUnits;
 	private Unit unit;
 	
 	private static Tribe tribe = new Tribe(); // 고유 인스턴스
