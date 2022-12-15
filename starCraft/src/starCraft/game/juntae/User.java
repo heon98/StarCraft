@@ -5,8 +5,6 @@ import java.util.Scanner;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import step08oopcafe.cafe.CafeManager;
-import step08oopcafe.cafe.hall.Menu;
 
 /**
  * 유저는 종족을 선택할수있음
@@ -38,6 +36,7 @@ public class User {
 	public void selectTride() {
 		Scanner sc = new Scanner(System.in);
 		int isTrideSelect = sc.nextInt();
+		if(isTrideSelect == )
 		Tride tride = GameManager.getInstance().getTrides().get(isTrideSelect - 1);
 		System.out.println("당신의 종족은 " + tride.getTitle() + "입니다.");
 	}
