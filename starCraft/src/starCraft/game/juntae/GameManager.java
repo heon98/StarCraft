@@ -20,7 +20,6 @@ public class GameManager {
 	private static GameManager gameManager = new GameManager();
 
 	private GameManager() {
-		System.out.println("로딩 완료");
 
 		// 종족 리스트
 		Tride terran = new Tride("테란");
