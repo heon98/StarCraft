@@ -42,7 +42,7 @@ public class User {
 	public void selectTride() {
 		Scanner sc = new Scanner(System.in);
 		int isTrideSelect = sc.nextInt();
-		if((isTrideSelect == 1) || (isTrideSelect == 1) || (isTrideSelect == 1)) {
+		if((isTrideSelect == 1) || (isTrideSelect == 2) || (isTrideSelect == 3)) {
 			Tride trides = GameManager.getInstance().getTrides().get(isTrideSelect - 1);
 			tride = trides.getTitle();
 			System.out.println("당신의 종족은 " + trides.getTitle() + "입니다.");
