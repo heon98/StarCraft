@@ -1,12 +1,14 @@
 package starCraft.game.juntae;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
 public class Computer {
-
 	public static void main(String[] args) {
+//	public Computer() {
+			
 		int maxMineral = 1000; // private
 
 		HashMap<UnitItem, Integer> enemyUnits = new HashMap<UnitItem, Integer>();
@@ -19,8 +21,6 @@ public class Computer {
 		List<UnitItem> terran = GameManager.getInstance().getTerranUnit().getUnitList();
 		List<UnitItem> zerg = GameManager.getInstance().getZergUnit().getUnitList();
 		List<UnitItem> protoss = GameManager.getInstance().getProtossUnit().getUnitList();
-
-//		System.out.println(terran.get(5));
 
 		if (tribe == 0) {
 			confirmUnit = terran;
@@ -44,19 +44,21 @@ public class Computer {
 			} else {
 				enemyUnits.put(confirmUnit.get(temp), 1);
 			} 
-		}	
+		}
 		
-		System.out.println(enemyUnits);
+		int enemyPower = 0;
+		Iterator<UnitItem> keys = enemyUnits.keySet().iterator();
+        while (keys.hasNext()){
+            UnitItem key = keys.next();
+            enemyPower += key.getPower()*enemyUnits.get(key);
+        }
+        System.out.println(enemyUnits);
+        System.out.println(enemyPower);
+        UnitItem[][] synergy = {{confirmUnit.get(0), confirmUnit.get(1)}, {confirmUnit.get(1), confirmUnit.get(1)}};
+        for (UnitItem[] unitItems : synergy) {
+			if(unitItems in enemyUnits.keySet())
+		}
 		
-		
-		// 합격
-//		enemyUnits.put(terran.get(0), 1);
-//		enemyUnits.put(terran.get(0), enemyUnits.get(terran.get(0))+1);
-//		enemyUnits.put(terran.get(0), enemyUnits.get(terran.get(0))+1);
-//		System.out.println(enemyUnits);
-		
-
-
 	}
 
 }
