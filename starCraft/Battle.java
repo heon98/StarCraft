@@ -1,4 +1,4 @@
-package juntae;
+package StarCraft;
 
 public class Battle {
 	public static void battle() {
