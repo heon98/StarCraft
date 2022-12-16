@@ -32,7 +32,7 @@ public class CalculateMineral {
 		}
 
 		while (true && maxMineral != 0) {
-			System.out.println(maxMineral + "원 남았습니다.");
+			System.out.println("\n" + maxMineral + "원 남았습니다.");
 			System.out.print("생성할 유닛번호를 입력하세요/ 멈추려면 10을 입력해주세요.");
 			Scanner sc = new Scanner(System.in);
 			int temp;
@@ -42,7 +42,7 @@ public class CalculateMineral {
 				if ((temp <= 5 && temp >=0)|| temp == 9) {
 					break;
 				}
-				System.out.println("1~6의 유닛 번호를 입력 하시거나 종료하시기 위해 10을 입력해주세요.");
+				System.out.print("1~6의 유닛 번호를 입력 하시거나 종료하시기 위해 10을 입력해주세요.");
 			}
 
 			if (temp == 9) {
@@ -66,15 +66,15 @@ public class CalculateMineral {
 	        }
             System.out.println("--------------------------------------------");
 		}
-		System.out.println("유닛 구매가 완료되었습니다.");
-
+		System.out.println("\n유닛 구매가 완료되었습니다.");
+		System.out.println("ㅇ 나의 유닛 현황 ㅇ");
 		Iterator<UnitItem> keys = userUnits.keySet().iterator();
         while (keys.hasNext()){
             UnitItem key = keys.next();
             userPower += key.getPower()*userUnits.get(key);
             System.out.println(key.getName() + " = " + userUnits.get(key) + " 개");
         }
-        
+        System.out.println("\n");
 		return userUnits;
 	}
 }

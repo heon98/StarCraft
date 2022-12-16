@@ -52,14 +52,8 @@ public class Computer {
             enemyPower += key.getPower()*enemyUnits.get(key);
             System.out.println(key.getName() + " = " + enemyUnits.get(key) + " 개");
         }       
-        System.out.println("oooooooooooooooooooooooooooooooooooooooooooo");
-        
-        
-        
-//        UnitItem[][] synergy = {{confirmUnit.get(0), confirmUnit.get(1)}, {confirmUnit.get(1), confirmUnit.get(1)}};
-//        for (UnitItem[] unitItems : synergy) {
-//			if(unitItems in enemyUnits.keySet())
-//		}
+        System.out.println("oooooooooooooooooooooooooooooooooooooooooooo\n");
+
 		
 	}
 

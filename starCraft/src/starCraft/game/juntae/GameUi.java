@@ -7,13 +7,16 @@ public class GameUi {
 		Date nowDate = new Date();
 		System.out.println("*--------------------------------------------------------*");
 		System.out.println("*                                                        *");
-		System.out.println("*	스타크래프트 구현예제                                  *");
+		System.out.println("*                         스타크래프트                         *");
 		System.out.println("*                                                        *");
 		System.out.println("*--------------------------------------------------------*");
 
-		System.out.println("스타크래프트 게임을 시작합니다...");
-		Thread.sleep(1000);
-		System.out.println("로딩 완료");
+		System.out.println("스타크래프트를 시작합니다...");
+		for (int i = 0; i < 2; i++) {
+			System.out.println("로딩중...");
+			Thread.sleep(1000);
+		}
+		System.out.println("⭐로딩 완료⭐\n");
 		User yoo = GameManager.getInstance().getUsers().get(0);
 		Thread.sleep(1000);
 		System.out.println("당신의 종족을 선택해주세요.....");
