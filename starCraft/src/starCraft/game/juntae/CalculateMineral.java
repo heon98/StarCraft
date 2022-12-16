@@ -12,7 +12,7 @@ public class CalculateMineral {
 	static int userPower = 0;
 	
 	public static HashMap calculateChange() {
-		int maxMineral = 1000;
+		int maxMineral = 2000;
 
 		HashMap<UnitItem, Integer> userUnits = new HashMap<UnitItem, Integer>();
 
@@ -35,7 +35,16 @@ public class CalculateMineral {
 			System.out.println(maxMineral + "원 남았습니다.");
 			System.out.print("생성할 유닛번호를 입력하세요/ 멈추려면 10을 입력해주세요.");
 			Scanner sc = new Scanner(System.in);
-			int temp = sc.nextInt() - 1;
+			int temp;
+			
+			while (true) {
+				temp = sc.nextInt() - 1;
+				if ((temp <= 5 && temp >=0)|| temp == 9) {
+					break;
+				}
+				System.out.println("1~6의 유닛 번호를 입력 하시거나 종료하시기 위해 10을 입력해주세요.");
+			}
+
 			if (temp == 9) {
 				break;
 			}

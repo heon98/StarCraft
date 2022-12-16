@@ -59,7 +59,8 @@ public class User {
 	
 	public void selectUnit(int change) {
             HashMap result = CalculateMineral.calculateChange();
-        }
+	}
+
     
 	
 	public User(String nickName, int mineral) {

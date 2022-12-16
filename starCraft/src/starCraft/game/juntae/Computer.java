@@ -9,7 +9,7 @@ public class Computer {
 	static int enemyPower = 0;
 	public Computer() {
 			
-		int maxMineral = 1000; // private
+		int maxMineral = 2000; // private
 
 		HashMap<UnitItem, Integer> enemyUnits = new HashMap<UnitItem, Integer>();
 
