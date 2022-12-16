@@ -8,8 +8,8 @@ import java.util.Random;
 public class Computer {
 	static int enemyPower = 0;
 	public Computer() {
-			
-		int maxMineral = 2000; // private
+
+		int maxMineral = SelectMineral.maxMineral;
 
 		HashMap<UnitItem, Integer> enemyUnits = new HashMap<UnitItem, Integer>();
 
@@ -52,14 +52,8 @@ public class Computer {
             enemyPower += key.getPower()*enemyUnits.get(key);
             System.out.println(key.getName() + " = " + enemyUnits.get(key) + " 개");
         }       
-        System.out.println("oooooooooooooooooooooooooooooooooooooooooooo");
-        
-        
-        
-//        UnitItem[][] synergy = {{confirmUnit.get(0), confirmUnit.get(1)}, {confirmUnit.get(1), confirmUnit.get(1)}};
-//        for (UnitItem[] unitItems : synergy) {
-//			if(unitItems in enemyUnits.keySet())
-//		}
+        System.out.println("oooooooooooooooooooooooooooooooooooooooooooo\n");
+
 		
 	}
 
