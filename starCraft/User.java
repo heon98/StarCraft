@@ -1,5 +1,4 @@
-package juntae;
-
+package StarCraft.starCraft;
 
 import java.util.HashMap;
 import java.util.Scanner;
