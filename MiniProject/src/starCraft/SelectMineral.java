@@ -12,7 +12,7 @@ public class SelectMineral {
 			if (maxMineral>=500 && maxMineral<=3000) {
 				break;
 			}
-			System.out.print("자원의 양을 500~3000 사이로 입력해주세요");
+			System.err.print("자원의 양을 500~3000 사이로 입력해주세요");
 		}
 	}
 }
