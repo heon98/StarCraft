@@ -8,8 +8,8 @@ import java.util.Random;
 public class Computer {
 	static int enemyPower = 0;
 	public Computer() {
-			
-		int maxMineral = 2000; // private
+
+		int maxMineral = SelectMineral.maxMineral;
 
 		HashMap<UnitItem, Integer> enemyUnits = new HashMap<UnitItem, Integer>();
 

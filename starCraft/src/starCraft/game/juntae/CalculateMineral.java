@@ -12,7 +12,7 @@ public class CalculateMineral {
 	static int userPower = 0;
 	
 	public static HashMap calculateChange() {
-		int maxMineral = 2000;
+		int maxMineral = SelectMineral.maxMineral;
 
 		HashMap<UnitItem, Integer> userUnits = new HashMap<UnitItem, Integer>();
 

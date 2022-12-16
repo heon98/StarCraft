@@ -23,7 +23,8 @@ public class GameUi {
 		System.out.println("1번 테란 | 2번 저그 | 3번 프로토스");
 		yoo.selectTride();
 		Thread.sleep(1000);
-		System.out.println("최대 사용가능한 미네랄은 1000입니다.");
+		SelectMineral.selectMineral();
+		System.out.println("최대 사용가능한 미네랄은 " + SelectMineral.maxMineral +"입니다.");
 		Thread.sleep(1000);
 		System.out.println("상대의 유닛은");
 		Computer enemy = new Computer();

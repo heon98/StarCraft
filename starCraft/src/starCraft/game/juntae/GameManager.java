@@ -30,26 +30,26 @@ public class GameManager {
 		trides = new ArrayList<>(Arrays.asList(trideList));
 
 		// 유닛 메뉴판
-		UnitItem unit1 = new UnitItem("마린", 50, 10, 1);
-		UnitItem unit2 = new UnitItem("탱크", 300, 50, 2);
-		UnitItem unit3 = new UnitItem("골리앗", 250, 40, 3);
-		UnitItem unit4 = new UnitItem("벌쳐", 100, 20, 4);
-		UnitItem unit5 = new UnitItem("레이스", 200, 30, 5);
-		UnitItem unit6 = new UnitItem("배틀크루져", 350, 70, 6);
+		UnitItem unit1 = new UnitItem("마린", 50, 7, 1);
+		UnitItem unit2 = new UnitItem("탱크", 250, 52, 2);
+		UnitItem unit3 = new UnitItem("골리앗", 150, 32, 3);
+		UnitItem unit4 = new UnitItem("벌쳐", 75, 16, 4);
+		UnitItem unit5 = new UnitItem("레이스", 250, 42, 5);
+		UnitItem unit6 = new UnitItem("배틀크루져", 400, 71, 6);
+		
+		UnitItem unit7 = new UnitItem("저글링", 25, 4, 1);
+		UnitItem unit8 = new UnitItem("히드라", 100, 22, 2);
+		UnitItem unit9 = new UnitItem("럴커", 200, 41, 3);
+		UnitItem unit10 = new UnitItem("뮤탈", 150, 33, 4);
+		UnitItem unit11 = new UnitItem("감연된 테란", 125, 28, 5);
+		UnitItem unit12 = new UnitItem("울트라리스크", 300, 62, 6);
 
-		UnitItem unit7 = new UnitItem("저글링", 50, 10, 1);
-		UnitItem unit8 = new UnitItem("히드라", 100, 20, 2);
-		UnitItem unit9 = new UnitItem("럴커", 250, 50, 3);
-		UnitItem unit10 = new UnitItem("뮤탈", 150, 30, 4);
-		UnitItem unit11 = new UnitItem("스커지", 100, 25, 5);
-		UnitItem unit12 = new UnitItem("울트라리스크", 300, 60, 6);
-
-		UnitItem unit13 = new UnitItem("질럿", 150, 15, 1);
-		UnitItem unit14 = new UnitItem("드라군", 200, 20, 2);
-		UnitItem unit15 = new UnitItem("리버", 300, 30, 3);
-		UnitItem unit16 = new UnitItem("스카우트", 300, 30, 4);
-		UnitItem unit17 = new UnitItem("셔틀", 200, 0, 5);
-		UnitItem unit18 = new UnitItem("캐리어", 400, 70, 6);
+		UnitItem unit13 = new UnitItem("질럿", 100, 15, 1);
+		UnitItem unit14 = new UnitItem("드라군", 200, 40, 2);
+		UnitItem unit15 = new UnitItem("리버", 250, 45, 3);
+		UnitItem unit16 = new UnitItem("스카우트", 250, 35, 4);
+		UnitItem unit17 = new UnitItem("아콘", 250, 53, 5);
+		UnitItem unit18 = new UnitItem("캐리어", 350, 67, 6);
 
 		UnitItem[] terranLists = { unit1, unit2, unit3, unit4, unit5, unit6};
 		List<UnitItem> terranList = new ArrayList<>(Arrays.asList(terranLists));
