@@ -50,7 +50,7 @@ public class CalculateMineral {
 			}
 			maxMineral -= confirmUnit.get(temp).getPrice();
 			if (maxMineral < 0) {
-				System.out.println("돈이없어서 못사는 유닛입니다.");
+				System.err.println("돈이없어서 못사는 유닛입니다.");
 				maxMineral += confirmUnit.get(temp).getPrice();
 			}
 			else if (userUnits.containsKey(confirmUnit.get(temp))) {
