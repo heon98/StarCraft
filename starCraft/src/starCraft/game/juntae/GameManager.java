@@ -7,8 +7,8 @@ import java.util.List;
 import lombok.Getter;
 import lombok.ToString;
 
-@ToString
 @Getter
+@ToString
 public class GameManager {
 	private List<Tride> trides;
 	private List<User> users;
@@ -79,4 +79,8 @@ public class GameManager {
 	public static GameManager getInstance() {
 		return gameManager;
 	}
+
+	
+
+
 }

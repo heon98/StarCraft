@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.Random;
 
 public class Computer {
-	public static void main(String[] args) {
-//	public Computer() {
+	static int enemyPower = 0;
+	public Computer() {
 			
 		int maxMineral = 1000; // private
 
@@ -45,19 +45,21 @@ public class Computer {
 				enemyUnits.put(confirmUnit.get(temp), 1);
 			} 
 		}
-		
-		int enemyPower = 0;
+		System.out.println("oooooooooooooooooooooooooooooooooooooooooooo");
 		Iterator<UnitItem> keys = enemyUnits.keySet().iterator();
         while (keys.hasNext()){
             UnitItem key = keys.next();
             enemyPower += key.getPower()*enemyUnits.get(key);
-        }
-        System.out.println(enemyUnits);
-        System.out.println(enemyPower);
-        UnitItem[][] synergy = {{confirmUnit.get(0), confirmUnit.get(1)}, {confirmUnit.get(1), confirmUnit.get(1)}};
-        for (UnitItem[] unitItems : synergy) {
-			if(unitItems in enemyUnits.keySet())
-		}
+            System.out.println(key.getName() + " = " + enemyUnits.get(key) + " 개");
+        }       
+        System.out.println("oooooooooooooooooooooooooooooooooooooooooooo");
+        
+        
+        
+//        UnitItem[][] synergy = {{confirmUnit.get(0), confirmUnit.get(1)}, {confirmUnit.get(1), confirmUnit.get(1)}};
+//        for (UnitItem[] unitItems : synergy) {
+//			if(unitItems in enemyUnits.keySet())
+//		}
 		
 	}
 

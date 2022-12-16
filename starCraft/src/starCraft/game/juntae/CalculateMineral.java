@@ -1,11 +1,16 @@
 package starCraft.game.juntae;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 
-public class calculateMineral {
+import lombok.Getter;
 
+@Getter
+public class CalculateMineral {
+	static int userPower = 0;
+	
 	public static HashMap calculateChange() {
 		int maxMineral = 1000;
 
@@ -44,9 +49,23 @@ public class calculateMineral {
 			} else {
 				userUnits.put(confirmUnit.get(temp), 1);
 			}
-			System.out.println(userUnits);
+            System.out.println("--------------------------------------------");
+			Iterator<UnitItem> keys = userUnits.keySet().iterator();
+	        while (keys.hasNext()){
+	            UnitItem key = keys.next();
+	            System.out.println(key.getName() + " = " + userUnits.get(key) + " 개");
+	        }
+            System.out.println("--------------------------------------------");
 		}
 		System.out.println("유닛 구매가 완료되었습니다.");
+
+		Iterator<UnitItem> keys = userUnits.keySet().iterator();
+        while (keys.hasNext()){
+            UnitItem key = keys.next();
+            userPower += key.getPower()*userUnits.get(key);
+            System.out.println(key.getName() + " = " + userUnits.get(key) + " 개");
+        }
+        
 		return userUnits;
 	}
 }

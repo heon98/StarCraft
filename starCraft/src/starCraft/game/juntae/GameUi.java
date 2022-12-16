@@ -2,7 +2,7 @@ package starCraft.game.juntae;
 
 import java.util.Date;
 
-public class gameui {
+public class GameUi {
 	public static void main(String args[]) throws InterruptedException {
 		Date nowDate = new Date();
 		System.out.println("*--------------------------------------------------------*");
@@ -23,10 +23,18 @@ public class gameui {
 		System.out.println("최대 사용가능한 미네랄은 1000입니다.");
 		Thread.sleep(1000);
 		System.out.println("상대의 유닛은");
+		Computer enemy = new Computer();
 		
 		Thread.sleep(1000);
 		System.out.println("자원을 효율적으로 사용하여 유닛을 생성하고 승리하세요.");
 		Thread.sleep(1000);
+		
+		Unit unit = User.showUnit();
+		System.out.println(unit);
+		Thread.sleep(1000);
+		
 		yoo.selectUnit(1000);
+		Thread.sleep(1000);
+		Battle.battle();
 	}
 }

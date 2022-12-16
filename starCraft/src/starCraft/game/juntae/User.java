@@ -31,7 +31,7 @@ public class User {
 //	private UserInfo userInfo;
 	
 	
-	public Unit showUnit() {
+	public static Unit showUnit() {
 		if (tride == "테란") {
 			return GameManager.getInstance().getTerranUnit();
 		} else if (tride == "저그") {
@@ -49,8 +49,6 @@ public class User {
 			Tride trides = GameManager.getInstance().getTrides().get(isTrideSelect - 1);
 			tride = trides.getTitle();
 			System.out.println("당신의 종족은 " + trides.getTitle() + "입니다.");
-			Unit unit = showUnit();
-			System.out.println(unit);
 		} else {
 			System.out.println("종족을 제대로 선택해주세요");
 			System.out.println("1번 테란 | 2번 저그 | 3번 프로토스");
@@ -60,7 +58,7 @@ public class User {
 
 	
 	public void selectUnit(int change) {
-            HashMap result = calculateMineral.calculateChange();
+            HashMap result = CalculateMineral.calculateChange();
         }
     
 	
