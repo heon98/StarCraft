@@ -1,4 +1,4 @@
-package StarCraft;
+package StarCraft.starCraft;
 
 public class Battle {
 	public static void battle() {
