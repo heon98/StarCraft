@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class GameUi {
 	public static void main(String args[]) throws InterruptedException {
-		Date nowDate = new Date();
+		new Date();
 		System.out.println("*--------------------------------------------------------*");
 		System.out.println("*                                                        *");
 		System.out.println("*                         스타크래프트                         *");
@@ -27,7 +27,7 @@ public class GameUi {
 		System.out.println("최대 사용가능한 미네랄은 " + SelectMineral.maxMineral +"입니다.");
 		Thread.sleep(1000);
 		System.out.println("상대의 유닛은");
-		Computer enemy = new Computer();
+		new Computer();
 		
 		Thread.sleep(1000);
 		System.out.println("자원을 효율적으로 사용하여 유닛을 생성하고 승리하세요.");

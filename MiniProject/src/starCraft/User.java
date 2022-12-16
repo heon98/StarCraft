@@ -1,10 +1,8 @@
 package starCraft;
 
 
-import java.util.HashMap;
 import java.util.Scanner;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 /**
@@ -43,6 +41,7 @@ public class User {
 	
 	
 	public void selectTride() {
+		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 		int isTrideSelect = sc.nextInt();
 		if((isTrideSelect == 1) || (isTrideSelect == 2) || (isTrideSelect == 3)) {
@@ -58,7 +57,7 @@ public class User {
 
 	
 	public void selectUnit(int change) {
-            HashMap result = CalculateMineral.calculateChange();
+            CalculateMineral.calculateChange();
 	}
 
     
@@ -71,7 +70,6 @@ public class User {
 
 	
 	public static String tride() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 	

@@ -11,7 +11,7 @@ import lombok.Getter;
 public class CalculateMineral {
 	static int userPower = 0;
 	
-	public static HashMap calculateChange() {
+	public static HashMap<UnitItem, Integer> calculateChange() {
 		int maxMineral = SelectMineral.maxMineral;
 
 		HashMap<UnitItem, Integer> userUnits = new HashMap<UnitItem, Integer>();
@@ -34,6 +34,7 @@ public class CalculateMineral {
 		while (true && maxMineral != 0) {
 			System.out.println("\n" + maxMineral + "원 남았습니다.");
 			System.out.print("생성할 유닛번호를 입력하세요/ 멈추려면 10을 입력해주세요.");
+			@SuppressWarnings("resource")
 			Scanner sc = new Scanner(System.in);
 			int temp;
 			
