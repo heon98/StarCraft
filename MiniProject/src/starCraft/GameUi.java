@@ -1,4 +1,4 @@
-package starCraft.game.juntae;
+package starCraft;
 
 import java.util.Date;
 

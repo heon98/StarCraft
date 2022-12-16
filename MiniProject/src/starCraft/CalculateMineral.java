@@ -1,4 +1,4 @@
-package StarCraft.starCraft;
+package starCraft;
 
 import java.util.HashMap;
 import java.util.Iterator;

@@ -1,4 +1,4 @@
-package StarCraft.starCraft;
+package starCraft;
 
 public class Battle {
 	public static void battle() throws InterruptedException {

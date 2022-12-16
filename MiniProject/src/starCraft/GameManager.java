@@ -1,4 +1,4 @@
-package StarCraft.starCraft;
+package starCraft;
 
 import java.util.ArrayList;
 import java.util.Arrays;

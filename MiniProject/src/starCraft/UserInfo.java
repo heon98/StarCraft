@@ -1,4 +1,4 @@
-package StarCraft.starCraft;
+package starCraft;
 
 /**
  * 고객정보 클래스
