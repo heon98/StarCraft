@@ -1,4 +1,4 @@
-package mini_project.Star;
+package starCraft.game.juntae;
 
 
 import java.util.Scanner;
@@ -26,7 +26,7 @@ import lombok.Getter;
 public class User {
 	private String nickName;
 	private int mineral;
-	private String tride;
+	static String tride;
 //	private UserInfo userInfo;
 	
 	public Unit showUnit() {

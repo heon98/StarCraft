@@ -1,4 +1,4 @@
-package mini_project.Star;
+package starCraft.game.juntae;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
