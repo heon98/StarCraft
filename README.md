@@ -1,2 +1,0 @@
-# StarCraft
-PlayData Mini Project

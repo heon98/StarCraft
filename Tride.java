@@ -1,4 +1,4 @@
-package starCraft.game.juntae;
+package juntae;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,4 +1,4 @@
-package starCraft.game.juntae;
+package juntae;
 
 public class Battle {
 	public static void battle() {
