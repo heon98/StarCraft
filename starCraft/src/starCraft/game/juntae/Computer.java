@@ -1,12 +1,13 @@
 package starCraft.game.juntae;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
 public class Computer {
-	
-	public Computer() {
+	public static void main(String[] args) {
+//	public Computer() {
 			
 		int maxMineral = 1000; // private
 
@@ -44,6 +45,15 @@ public class Computer {
 				enemyUnits.put(confirmUnit.get(temp), 1);
 			} 
 		}
+		
+		int enemyPower = 0;
+		Iterator<UnitItem> keys = enemyUnits.keySet().iterator();
+        while (keys.hasNext()){
+            UnitItem key = keys.next();
+            enemyPower += key.getPower()*enemyUnits.get(key);
+        }
+        System.out.println(enemyUnits);
+        System.out.println(enemyPower);
 		
 	}
 
