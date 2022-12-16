@@ -1,6 +1,7 @@
 package starCraft.game.juntae;
 
 
+import java.util.HashMap;
 import java.util.Scanner;
 
 import lombok.AllArgsConstructor;
@@ -29,6 +30,7 @@ public class User {
 	static String tride;
 //	private UserInfo userInfo;
 	
+	
 	public Unit showUnit() {
 		if (tride == "테란") {
 			return GameManager.getInstance().getTerranUnit();
@@ -38,6 +40,7 @@ public class User {
 			return GameManager.getInstance().getProtossUnit();
 		}
 	}
+	
 	
 	public void selectTride() {
 		Scanner sc = new Scanner(System.in);
@@ -55,21 +58,22 @@ public class User {
 		}
 	}
 
+	
 	public void selectUnit(int change) {
-        if (change > 0) {
-           System.out.print("생성할 유닛을 입력하세요(ex. 마린)");
-            Scanner sc = new Scanner(System.in);
-            String isUnitSelect = sc.nextLine();
-            change = calculateMineral.calculateChange(isUnitSelect, change);
-            System.out.println(change);
-            selectUnit(change);
+            HashMap result = calculateMineral.calculateChange();
         }
-    }
-
+    
+	
 	public User(String nickName, int mineral) {
 		super();
 		this.nickName = nickName;
 		this.mineral = mineral;
+	}
+
+	
+	public static String tride() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 }

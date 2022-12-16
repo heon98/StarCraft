@@ -10,7 +10,7 @@ public class gameui {
 		System.out.println("*	스타크래프트 구현예제                                  *");
 		System.out.println("*                                                        *");
 		System.out.println("*--------------------------------------------------------*");
-		
+
 		System.out.println("스타크래프트 게임을 시작합니다...");
 		Thread.sleep(1000);
 		System.out.println("로딩 완료");

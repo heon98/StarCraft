@@ -1,4 +1,4 @@
-package starCraft.game.juntae;
+package juntae;
 
 /**
  * 고객정보 클래스
