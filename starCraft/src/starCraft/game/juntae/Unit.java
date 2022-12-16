@@ -16,7 +16,7 @@ public class Unit {
 		for (UnitItem unitItem : unitList) {
 			System.out.println(unitItem);
 		}
-		return null;
+		return "--------------------------------------------------------------------------------";
 	}
 	
 }
